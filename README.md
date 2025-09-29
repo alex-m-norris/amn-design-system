@@ -7,7 +7,7 @@
   <h1 align="center">Alex M. Norris - Design System</h1>
 
   <p align="center">
-    This is an open source design system made for my personal projects that i work on developing.
+    This is an open source design system made for my personal projects that I work on developing.
     <br />
     <a href="#"><strong>Explore the docs » Coming soon!</strong></a>
     <br />
@@ -107,7 +107,7 @@ Contributions are what make the open source community such an amazing place to l
 
 If you have a suggestion that would make this better, please create a pull request. You can also simply open an issue with the tag "enhancement".
 
-_Please note_ - this repo is has some linting in place for committing to this repo by utilising simple git hooks, commitlint and lint-staged.
+_Please note_ - this repo has some linting in place for committing to this repo by utilising simple git hooks, commitlint and lint-staged.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
