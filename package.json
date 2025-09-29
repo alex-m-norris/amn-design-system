@@ -28,5 +28,8 @@
     "*.{cjs,js,ts,tsx,json,jsonc}": "pnpm dlx biome check --write",
     "*.{css,scss,sass,less}": "pnpm dlx stylelint --fix"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "packageManager": "pnpm@9.5.0"
 }

@@ -1,9 +1,24 @@
-.DS_Store
-node_modules
-.turbo
-*.log
+# build output
 dist
 dist-ssr
+
+# dependencies
+node_modules
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Local .env files
+.env*.local
+
+# Miscelaneous
+.DS_Store
+.turbo
+*.log
 *.local
 .env
 .cache
