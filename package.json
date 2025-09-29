@@ -1,16 +1,32 @@
 {
+  "name": "amn-design-system",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "check": "biome check --write",
+    "format": "biome format --write",
+    "postinstall": "simple-git-hooks"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
+    "@biomejs/biome": "2.2.4",
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "simple-git-hooks": "^2.13.1",
     "turbo": "^2.5.8"
   },
-  "packageManager": "pnpm@8.15.6",
-  "name": "with-vite-react"
+  "simple-git-hooks": {
+    "commit-msg": "pnpm dlx commitlint --edit $1",
+    "pre-commit": "pnpm dlx lint-staged"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{cjs,js,ts,tsx,json,jsonc}": "pnpm dlx biome check --write",
+    "*.{css,scss,sass,less}": "pnpm dlx stylelint --fix"
+  },
+  "packageManager": "pnpm@9.5.0"
 }
