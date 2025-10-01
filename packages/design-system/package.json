@@ -1,0 +1,29 @@
+{
+  "name": "@repo/design-system",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./index.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:lib": "vite build --config ./vite.config.ts"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^24.6.1",
+    "@types/react": "^19.1.15",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

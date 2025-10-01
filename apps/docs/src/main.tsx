@@ -1,11 +1,10 @@
 import { createRoot } from "react-dom/client";
-import "./style.css";
-import { Counter } from "@repo/ui";
+import { AmnCounter } from "@repo/design-system";
 
 const App = () => (
   <div>
     <div className="card">
-      <Counter />
+      <AmnCounter />
     </div>
   </div>
 );

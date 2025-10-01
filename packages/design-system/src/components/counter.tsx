@@ -1,5 +1,5 @@
 import type React from "react";
 
-export const Counter: React.FC = () => {
+export const AmnCounter: React.FC = () => {
   return <span>Hello world test</span>;
 };
