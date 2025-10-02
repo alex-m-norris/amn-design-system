@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "types": "./index.ts"
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "files": [
@@ -14,18 +14,15 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "build": "run-p build:*",
-    "build:lib": "vite build --config ./vite.config.ts"
+    "build": "vite build ./vite.config.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@types/node": "^24.6.1",
-    "@types/react": "^19.1.15",
-    "vite-plugin-dts": "^4.5.4"
+    "@repo/typescript-config": "workspace:*"
   },
   "repository": {
     "type": "git",
