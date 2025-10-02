@@ -1,2 +1,2 @@
-export { AmnCounter } from "./counter";
+export { Counter } from "./counter";
 
