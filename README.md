@@ -56,8 +56,6 @@ Please feel free to check out my blog site https://alexmnorris.dev which details
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 - [![React][react-shield]][React-url]
 - [![Shadcn][shadcn-shield]][shadcn-url]
 - [![Turborepo][turborepo-shield]][turborepo-url]

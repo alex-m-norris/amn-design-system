@@ -6,13 +6,19 @@
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": ["dist/**"]
     },
-    "//#check": {},
-    "//#format": {
-      "cache": false
-    },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
+    },
+    "publish": {
+      "dependsOn": ["build", "typecheck"],
+      "cache": false
     }
   }
 }
