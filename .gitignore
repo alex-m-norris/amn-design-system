@@ -24,3 +24,4 @@ node_modules
 .cache
 server/dist
 public/dist
+NPM_PUBLISHING_GUIDE.md

@@ -74,8 +74,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- **Node.js** 18.x or higher (minimum for React 19 and modern tooling)
-  **OR** Node.js 20.x or 22.x (recommended for optimal compatibility with pnpm 9.5.0 and the latest tooling)
+- **Node** 22 or above
 - **pnpm** (I recommend using NVM and installing the latest version of Node, and then enable corepack)
 
 ### Installation
