@@ -15,6 +15,9 @@ node_modules
 # Local .env files
 .env*.local
 
+# Releases
+.github/releases
+
 # Miscelaneous
 .DS_Store
 .turbo
@@ -24,4 +27,3 @@ node_modules
 .cache
 server/dist
 public/dist
-NPM_PUBLISHING_GUIDE.md

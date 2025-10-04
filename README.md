@@ -26,6 +26,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#repository-structure">Repository Structure</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -46,9 +47,32 @@
 
 ## About The Project
 
-This is a design system which is utilising the [Shadcn library](https://ui.shadcn.com/) and is powered by [Vite](https://vite.dev/). Here you'll find a collection of components which will be used on sites like my [blog](https://alexmnorris.dev).
+This is a monorepo (using turbo) design system which is utilising the [Shadcn library](https://ui.shadcn.com/) and is powered by [Vite](https://vite.dev/). Here you'll find a collection of components which will be used on sites like my [blog](https://alexmnorris.dev).
 
-While this repository is mine and that I maintain it, I'm building this as i believe in Open Source software so that I can contribute towards the community. If you experience a problem, please submit a pull request with a fix/suggestions. This project is not used to make revenue and purely a passion project.
+### Repository Structure
+
+As of pre-release, the current monorepo structure is as follows:
+
+```
+amnor-design-system/
+│
+├── apps/                        # Application workspaces
+│   └── docs/                    # Documentation site
+│
+├── packages/                    # Packages
+│   ├── design-system/           # Main design system package
+│   │   ├── src/                 # Source code
+│   │   │   └── components/      # Components library
+│   └── typescript-config/       # Shared TypeScript configs
+```
+
+#### Key Directories Explained
+
+- **`packages/design-system`**: The core design system library published to npm as `@amnor/design-system`
+- **`apps/docs`**: Documentation and demo site showcasing the components, this wil soon use a tool like Storybook or Ladle.
+- **`packages/typescript-config`**: Reusable TypeScript configurations shared across the monorepo
+
+While this repository is mine and I maintain it, I'm building this as i believe in Open Source software so that I can contribute towards the community. If you experience a problem, please submit a pull request with a fix/suggestions. This project is not used to make revenue and purely a passion project.
 
 Please feel free to check out my blog site https://alexmnorris.dev which details who I am, what I do and what I'm passionate about!
 
