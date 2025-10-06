@@ -26,7 +26,6 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#repository-structure">Repository Structure</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -47,30 +46,8 @@
 
 ## About The Project
 
-This is a monorepo (using turbo) design system which is utilising the [Shadcn library](https://ui.shadcn.com/) and is powered by [Vite](https://vite.dev/). Here you'll find a collection of components which will be used on sites like my [blog](https://alexmnorris.dev).
+This is a design system which is utilising the [Shadcn library](https://ui.shadcn.com/) and is powered by [Vite](https://vite.dev/). Here you'll find a collection of components which will be used on sites like my [blog](https://alexmnorris.dev).
 
-### Repository Structure
-
-As of pre-release, the current monorepo structure is as follows:
-
-```
-amnor-design-system/
-│
-├── apps/                        # Application workspaces
-│   └── docs/                    # Documentation site
-│
-├── packages/                    # Packages
-│   ├── design-system/           # Main design system package
-│   │   ├── src/                 # Source code
-│   │   │   └── components/      # Components library
-│   └── typescript-config/       # Shared TypeScript configs
-```
-
-#### Key Directories Explained
-
-- **`packages/design-system`**: The core design system library published to npm as `@amnor/design-system`
-- **`apps/docs`**: Documentation and demo site showcasing the components, this wil soon use a tool like Storybook or Ladle.
-- **`packages/typescript-config`**: Reusable TypeScript configurations shared across the monorepo
 
 While this repository is mine and I maintain it, I'm building this as i believe in Open Source software so that I can contribute towards the community. If you experience a problem, please submit a pull request with a fix/suggestions. This project is not used to make revenue and purely a passion project.
 
@@ -82,7 +59,6 @@ Please feel free to check out my blog site https://alexmnorris.dev which details
 
 - [![React][react-shield]][React-url]
 - [![Shadcn][shadcn-shield]][shadcn-url]
-- [![Turborepo][turborepo-shield]][turborepo-url]
 - [![Vite][vite-shield]][vite-url]
 - [![Biome][biome-shield]][biome-url]
 - [![Pnpm][pnpm-shield]][pnpm-url]
@@ -159,8 +135,6 @@ Alex Norris - [Linkedin][linkedin-url] - alexmnorris.dev@gmail.com
 [react-url]: https://reactjs.org/
 [shadcn-shield]: https://img.shields.io/badge/Shadcn-000000?style=for-the-badge&logo=shadcnui&logoColor=white
 [shadcn-url]: https://ui.shadcn.com/
-[turborepo-shield]: https://img.shields.io/badge/Turborepo-EF4444?style=for-the-badge&logo=turborepo&logoColor=white
-[turborepo-url]: https://turbo.build/repo
 [vite-shield]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white
 [vite-url]: https://vitejs.dev/
 [biome-shield]: https://img.shields.io/badge/Biome-000000?style=for-the-badge&logo=biome&logoColor=white
